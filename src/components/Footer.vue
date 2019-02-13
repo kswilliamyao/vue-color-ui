@@ -2,22 +2,22 @@
   <div id="footer">
     <div class='box'>
         <div class="cu-bar tabbar bg-white">
-            <div class="action text-green" @click="gotoUrl('/home')">
+            <div class="action" :class='router.path === "/home" ? "text-green": "text-gray"' @click="gotoUrl('/home')">
                 <div class='icon-homefill'></div> 首页
             </div>
-            <div class="action text-gray" @click="gotoUrl('/components')">
+            <div class="action"  :class='router.path === "/components" ? "text-green": "text-gray"' @click="gotoUrl('/components')">
                 <div class='icon-similar'></div> 组件
             </div>
             <div class="action text-gray add-action">
                 <div class='cu-btn icon-add bg-green shadow'></div>
                 测试
             </div>
-            <div class="action text-gray" @click="gotoUrl('/plugin')">
+            <div class="action" :class='router.path === "/plugin" ? "text-green": "text-gray"' @click="gotoUrl('/plugin')">
             <div class='icon-cart'>
             </div>
             拓展
             </div>
-            <div class="action text-gray" @click="gotoUrl('/about')">
+            <div class="action" :class='router.path === "/about" ? "text-green": "text-gray"' @click="gotoUrl('/about')">
             <div class='icon-my'>
             </div>
             关于我
@@ -30,10 +30,26 @@
 <script>
 export default {
   name: 'Footer',
+  data () {
+    return {
+        router: null,
+    }
+  },
+  created() {
+      this.getRouter();
+  },
+  watch: {
+      '$route': function() {
+          this.getRouter();
+      }
+  },
   methods: {
       gotoUrl(url) {
         this.$router.push(url);
-      }
+      },
+      getRouter() {
+          this.router = this.$route;
+      },
   },
 }
 </script>

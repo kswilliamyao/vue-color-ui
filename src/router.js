@@ -8,9 +8,17 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
+      path: '/',
+      redirect: '/home'
+    },
+    {
       path: '/home',
       name: 'home',
-      component: () => import( /* webpackChunkName: "about" */ './views/Home.vue')
+      component: () => import( /* webpackChunkName: "about" */ './views/Home.vue'),
+      meta: {
+        animate: 'slide-right',
+        title: '首页',
+      }
     },
     {
       path: '/about',
@@ -18,21 +26,33 @@ export default new Router({
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import(/* webpackChunkName: "about" */ './views/About.vue')
+      component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
+      meta: {
+        animate: 'slide-left',
+        title: '首页',
+      }
     }, {
       path: '/components',
       name: 'components',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import( /* webpackChunkName: "about" */ './views/Components.vue')
+      component: () => import( /* webpackChunkName: "about" */ './views/Components.vue'),
+      meta: {
+        animate: 'slide-left',
+        title: '首页',
+      }
     }, {
       path: '/plugin',
       name: 'plugin',
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
-      component: () => import( /* webpackChunkName: "about" */ './views/Plugin.vue')
+      component: () => import( /* webpackChunkName: "about" */ './views/Plugin.vue'),
+      meta: {
+        animate: 'slide-right',
+        title: '首页',
+      }
     }
   ]
 })
