@@ -5,3 +5,8 @@
 
 
 [传送门](https://github.com/weilanwl/ColorUI)
+
+
+
+
+![](https://github.com/martin-yin/vue-color-ui/blob/master/1.gif)
