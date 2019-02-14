@@ -93,7 +93,6 @@
         </div>
         </div>
         <div class="bg-video bg-mask">
-        <video src='https://www.weilanwl.com/theme/wl/assets/images/slider1.mp4' controls="controls" autoplay="true" style="width: 100%"></video>
         <div class='padding-xl text-white'>
             <div class='padding-xs text-xl'>
             开源是创新的动力之源

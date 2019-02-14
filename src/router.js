@@ -23,9 +23,6 @@ export default new Router({
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
       meta: {
         animate: 'slide-left',
@@ -34,9 +31,6 @@ export default new Router({
     }, {
       path: '/components',
       name: 'components',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import( /* webpackChunkName: "about" */ './views/Components.vue'),
       meta: {
         animate: 'slide-left',
@@ -45,9 +39,6 @@ export default new Router({
     }, {
       path: '/plugin',
       name: 'plugin',
-      // route level code-splitting
-      // this generates a separate chunk (about.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import( /* webpackChunkName: "about" */ './views/Plugin.vue'),
       meta: {
         animate: 'slide-right',
@@ -56,9 +47,6 @@ export default new Router({
     }, {
        path: '/layout',
        name: 'layout',
-       // route level code-splitting
-       // this generates a separate chunk (about.[hash].js) for this route
-       // which is lazy-loaded when the route is visited.
        component: () => import( /* webpackChunkName: "about" */ './ui/Layout.vue'),
        meta: {
          animate: 'slide-right',
@@ -67,14 +55,83 @@ export default new Router({
      }, {
        path: '/background',
        name: 'background',
-       // route level code-splitting
-       // this generates a separate chunk (about.[hash].js) for this route
-       // which is lazy-loaded when the route is visited.
        component: () => import( /* webpackChunkName: "about" */ './ui/Backgroud.vue'),
        meta: {
          animate: 'slide-right',
          title: '背景',
        }
-     }
+     }, {
+      path: '/text',
+      name: 'text',
+      component: () => import( /* webpackChunkName: "about" */ './ui/Text.vue'),
+      meta: {
+        animate: 'slide-right',
+        title: '背景',
+      }
+    }, {
+      path: '/icon',
+      name: 'icon',
+      component: () => import( /* webpackChunkName: "about" */ './ui/Icon.vue'),
+      meta: {
+        animate: 'slide-right',
+        title: '图标',
+      }
+    }, {
+      path: '/icon',
+      name: 'icon',
+      component: () => import( /* webpackChunkName: "about" */ './ui/Icon.vue'),
+      meta: {
+        animate: 'slide-right',
+        title: '图标',
+      }
+    }, {
+      path: '/button',
+      name: 'button',
+      component: () => import( /* webpackChunkName: "about" */ './ui/Button.vue'),
+      meta: {
+        animate: 'slide-right',
+        title: '按钮',
+      }
+    }, {
+      path: '/tag',
+      name: 'tag',
+      component: () => import( /* webpackChunkName: "about" */ './ui/Tag.vue'),
+      meta: {
+        animate: 'slide-right',
+        title: '标签',
+      }
+    }, {
+      path: '/avatar',
+      name: 'avatar',
+      component: () => import( /* webpackChunkName: "about" */ './ui/Avatar.vue'),
+      meta: {
+        animate: 'slide-right',
+        title: '头像',
+      }
+    }, {
+      path: '/progress',
+      name: 'progress',
+      component: () => import( /* webpackChunkName: "about" */ './ui/Progress.vue'),
+      meta: {
+        animate: 'slide-right',
+        title: '进度条',
+      }
+    }, {
+      path: '/shadow',
+      name: 'shadow',
+      component: () => import( /* webpackChunkName: "about" */ './ui/Shadow.vue'),
+      meta: {
+        animate: 'slide-right',
+        title: '阴影',
+      }
+    }, {
+      path: '/loading',
+      name: 'loading',
+      component: () => import( /* webpackChunkName: "about" */ './ui/Loading.vue'),
+      meta: {
+        animate: 'slide-right',
+        title: '加载',
+      }
+    }
   ]
 })

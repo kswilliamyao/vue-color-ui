@@ -35,49 +35,57 @@ export default {
           title: '文本',
           name: 'text',
           color: 'purple',
-          icon: 'font'
+          icon: 'font',
+          url: '/text'
         },
         {
           title: '图标 ',
           name: 'icon',
           color: 'mauve',
-          icon: 'icon'
+          icon: 'icon',
+          url: '/icon'
         },
         {
           title: '按钮',
           name: 'button',
           color: 'pink',
-          icon: 'btn'
+          icon: 'btn',
+          url: '/button'
         },
         {
           title: '标签',
           name: 'tag',
           color: 'brown',
-          icon: 'tagfill'
+          icon: 'tagfill',
+          url: '/tag'
         },
         {
           title: '头像',
           name: 'avatar',
           color: 'red',
-          icon: 'myfill'
+          icon: 'myfill',
+          url: '/avatar'
         },
         {
           title: '进度条',
           name: 'progress',
           color: 'orange',
-          icon: 'icloading'
+          icon: 'icloading',
+          url: '/progress'
         },
         {
           title: '边框阴影',
           name: 'shadow',
           color: 'olive',
-          icon: 'copy'
+          icon: 'copy',
+          url: '/shadow'
         },
         {
           title: '加载',
           name: 'loading',
           color: 'green',
-          icon: 'loading2'
+          icon: 'loading2',
+          url: '/loading'
         }
       ]
     }
