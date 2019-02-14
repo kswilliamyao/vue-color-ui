@@ -10,7 +10,7 @@
             </div>
             <div class="action text-gray add-action">
                 <div class='cu-btn icon-add bg-green shadow'></div>
-                测试
+                介绍
             </div>
             <div class="action" :class='router.path === "/plugin" ? "text-green": "text-gray"' @click="gotoUrl('/plugin')">
             <div class='icon-cart'>

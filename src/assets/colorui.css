@@ -922,7 +922,7 @@ button.icon.lg {
     width: 100%;
 }
 
-.cu-progress+view,
+.cu-progress+div,
 .cu-progress+text {
     line-height: 1;
 }
@@ -935,7 +935,7 @@ button.icon.lg {
     height: 20px;
 }
 
-.cu-progress view {
+.cu-progress div {
     width: 0;
     height: 100%;
     align-items: center;
@@ -959,12 +959,12 @@ button.icon.lg {
     padding-right: 60px;
 }
 
-.cu-progress.striped view {
+.cu-progress.striped div {
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
     background-size: 72px 72px;
 }
 
-.cu-progress.active view {
+.cu-progress.active div {
     animation: progress-stripes 2s linear infinite;
 }
 
@@ -1243,7 +1243,7 @@ button.icon.lg {
     text-align: center;
 }
 
-.cu-list.menu-avatar>.cu-item .action view+view {
+.cu-list.menu-avatar>.cu-item .action div+div {
     margin-top: 10px;
 }
 
@@ -1405,7 +1405,7 @@ button.icon.lg {
     transform: translateX(-260px);
 }
 
-.cu-list>.cu-item .move view {
+.cu-list>.cu-item .move div {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -1511,7 +1511,7 @@ button.icon.lg {
 }
 
 .cu-bar .action>text[class*="icon"],
-.cu-bar .action>view[class*="icon"] {
+.cu-bar .action>div[class*="icon"] {
     font-size: 36px;
 }
 
@@ -1816,7 +1816,7 @@ button.icon.lg {
   height: 54px;
 }
 
-.cu-bar.tabbar .action view {
+.cu-bar.tabbar .action div {
   font-size: 20px;
 } */
 
@@ -2529,12 +2529,12 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
     display: flex;
 }
 
-scroll-view.cu-steps {
+scroll-div.cu-steps {
     display: block;
     white-space: nowrap;
 }
 
-scroll-view.cu-steps .cu-item {
+scroll-div.cu-steps .cu-item {
     display: inline-block;
 }
 
@@ -2781,7 +2781,7 @@ scroll-view.cu-steps .cu-item {
     border-bottom-left-radius: 6px;
 }
 
-.grid.grid-square>view>text[class*="icon"] {
+.grid.grid-square>div>text[class*="icon"] {
     font-size: 52px;
     position: absolute;
     color: #aaa;
@@ -2796,7 +2796,7 @@ scroll-view.cu-steps .cu-item {
     flex-direction: column;
 }
 
-.grid.grid-square>view {
+.grid.grid-square>div {
     margin-right: 20px;
     margin-bottom: 20px;
     border-radius: 6px;
@@ -2804,65 +2804,65 @@ scroll-view.cu-steps .cu-item {
     overflow: hidden;
 }
 
-.grid.col-1.grid-square>view {
+.grid.col-1.grid-square>div {
     padding-bottom: 100%;
     height: 0;
     margin-right: 0;
 }
 
-.grid.col-2.grid-square>view {
+.grid.col-2.grid-square>div {
     padding-bottom: calc((100% - 20px)/2);
     height: 0;
     width: calc((100% - 20px)/2);
 }
 
-.grid.col-2.grid-square>view:nth-child(2n) {
+.grid.col-2.grid-square>div:nth-child(2n) {
     margin-right: 0;
 }
 
-.grid.col-3.grid-square>view {
+.grid.col-3.grid-square>div {
     padding-bottom: calc((100% - 40px)/3);
     height: 0;
     width: calc((100% - 40px)/3);
 }
 
-.grid.col-3.grid-square>view:nth-child(3n) {
+.grid.col-3.grid-square>div:nth-child(3n) {
     margin-right: 0;
 }
 
-.grid.col-4.grid-square>view {
+.grid.col-4.grid-square>div {
     padding-bottom: calc((100% - 60px)/4);
     height: 0;
     width: calc((100% - 60px)/4);
 }
 
-.grid.col-4.grid-square>view:nth-child(4n) {
+.grid.col-4.grid-square>div:nth-child(4n) {
     margin-right: 0;
 }
 
-.grid.col-5.grid-square>view {
+.grid.col-5.grid-square>div {
     padding-bottom: calc((100% - 80px)/5);
     height: 0;
     width: calc((100% - 80px)/5);
 }
 
-.grid.col-1>view {
+.grid.col-1>div {
     width: 100%;
 }
 
-.grid.col-2>view {
+.grid.col-2>div {
     width: 50%;
 }
 
-.grid.col-3>view {
+.grid.col-3>div {
     width: 33.33%;
 }
 
-.grid.col-4>view {
+.grid.col-4>div {
     width: 25%;
 }
 
-.grid.col-5>view {
+.grid.col-5>div {
     width: 20%;
 }
 
@@ -3541,13 +3541,13 @@ scroll-view.cu-steps .cu-item {
     top: 0;
 }
 
-.bg-mask view,
-.bg-mask cover-view {
+.bg-mask div,
+.bg-mask cover-div {
     z-index: 5;
     position: relative;
 }
 
-.bg-mask>cover-view {
+.bg-mask>cover-div {
     background-color: rgba(0, 0, 0, 0.5);
 }
 

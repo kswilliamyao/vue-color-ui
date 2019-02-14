@@ -53,6 +53,28 @@ export default new Router({
         animate: 'slide-right',
         title: '首页',
       }
-    }
+    }, {
+       path: '/layout',
+       name: 'layout',
+       // route level code-splitting
+       // this generates a separate chunk (about.[hash].js) for this route
+       // which is lazy-loaded when the route is visited.
+       component: () => import( /* webpackChunkName: "about" */ './ui/Layout.vue'),
+       meta: {
+         animate: 'slide-right',
+         title: '布局',
+       }
+     }, {
+       path: '/background',
+       name: 'background',
+       // route level code-splitting
+       // this generates a separate chunk (about.[hash].js) for this route
+       // which is lazy-loaded when the route is visited.
+       component: () => import( /* webpackChunkName: "about" */ './ui/Backgroud.vue'),
+       meta: {
+         animate: 'slide-right',
+         title: '背景',
+       }
+     }
   ]
 })
