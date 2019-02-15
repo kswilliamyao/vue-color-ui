@@ -1437,7 +1437,7 @@ button.icon.lg {
     top: -10px;
 }
 
-.cu-bar .action.border-title text[class*="bg-"]:last-child {
+.cu-bar .action.border-title p[class*="bg-"]:last-child {
     position: absolute;
     bottom: -0.5rem;
     min-width: 2rem;
@@ -1450,12 +1450,12 @@ button.icon.lg {
     top: -0.2rem;
 }
 
-.cu-bar .action.sub-title text {
+.cu-bar .action.sub-title p {
     position: relative;
     z-index: 1;
 }
 
-.cu-bar .action.sub-title text[class*="bg-"]:last-child {
+.cu-bar .action.sub-title p[class*="bg-"]:last-child {
     position: absolute;
     display: inline-block;
     bottom: -0.2rem;
@@ -1467,7 +1467,7 @@ button.icon.lg {
     z-index: 0;
 }
 
-.cu-bar .action.sub-title text[class*="text-"]:last-child {
+.cu-bar .action.sub-title p[class*="text-"]:last-child {
     position: absolute;
     display: inline-block;
     bottom: -0.7rem;

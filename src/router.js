@@ -26,7 +26,7 @@ export default new Router({
       component: () => import(/* webpackChunkName: "about" */ './views/About.vue'),
       meta: {
         animate: 'slide-left',
-        title: '首页',
+        title: '关于我',
       }
     }, {
       path: '/components',
@@ -34,7 +34,7 @@ export default new Router({
       component: () => import( /* webpackChunkName: "about" */ './views/Components.vue'),
       meta: {
         animate: 'slide-left',
-        title: '首页',
+        title: '组件',
       }
     }, {
       path: '/plugin',
@@ -42,96 +42,119 @@ export default new Router({
       component: () => import( /* webpackChunkName: "about" */ './views/Plugin.vue'),
       meta: {
         animate: 'slide-right',
-        title: '首页',
+        title: '拓展',
       }
     }, {
-       path: '/layout',
-       name: 'layout',
-       component: () => import( /* webpackChunkName: "about" */ './ui/Layout.vue'),
-       meta: {
-         animate: 'slide-right',
-         title: '布局',
-       }
-     }, {
-       path: '/background',
-       name: 'background',
-       component: () => import( /* webpackChunkName: "about" */ './ui/Backgroud.vue'),
-       meta: {
-         animate: 'slide-right',
-         title: '背景',
-       }
-     }, {
-      path: '/text',
-      name: 'text',
-      component: () => import( /* webpackChunkName: "about" */ './ui/Text.vue'),
+      path: '/bar',
+      name: 'bar',
+      component: () => import( /* webpackChunkName: "about" */ './components/Bar.vue'),
       meta: {
         animate: 'slide-right',
-        title: '背景',
+        title: '拓展',
       }
     }, {
-      path: '/icon',
-      name: 'icon',
-      component: () => import( /* webpackChunkName: "about" */ './ui/Icon.vue'),
+      path: '/base',
+      name: 'base',
+      component: () => import( /* webpackChunkName: "about" */ './views/Base.vue'),
       meta: {
         animate: 'slide-right',
-        title: '图标',
-      }
-    }, {
-      path: '/icon',
-      name: 'icon',
-      component: () => import( /* webpackChunkName: "about" */ './ui/Icon.vue'),
-      meta: {
-        animate: 'slide-right',
-        title: '图标',
-      }
-    }, {
-      path: '/button',
-      name: 'button',
-      component: () => import( /* webpackChunkName: "about" */ './ui/Button.vue'),
-      meta: {
-        animate: 'slide-right',
-        title: '按钮',
-      }
-    }, {
-      path: '/tag',
-      name: 'tag',
-      component: () => import( /* webpackChunkName: "about" */ './ui/Tag.vue'),
-      meta: {
-        animate: 'slide-right',
-        title: '标签',
-      }
-    }, {
-      path: '/avatar',
-      name: 'avatar',
-      component: () => import( /* webpackChunkName: "about" */ './ui/Avatar.vue'),
-      meta: {
-        animate: 'slide-right',
-        title: '头像',
-      }
-    }, {
-      path: '/progress',
-      name: 'progress',
-      component: () => import( /* webpackChunkName: "about" */ './ui/Progress.vue'),
-      meta: {
-        animate: 'slide-right',
-        title: '进度条',
-      }
-    }, {
-      path: '/shadow',
-      name: 'shadow',
-      component: () => import( /* webpackChunkName: "about" */ './ui/Shadow.vue'),
-      meta: {
-        animate: 'slide-right',
-        title: '阴影',
-      }
-    }, {
-      path: '/loading',
-      name: 'loading',
-      component: () => import( /* webpackChunkName: "about" */ './ui/Loading.vue'),
-      meta: {
-        animate: 'slide-right',
-        title: '加载',
-      }
+        title: '',
+      },
+      children: [
+        {
+          path: '/',
+          redirect: '/base/layout'
+        },
+        {
+          path: 'layout',
+          name: 'layout',
+          component: () => import( /* webpackChunkName: "about" */ './base/Layout.vue'),
+          meta: {
+            animate: 'slide-right',
+            title: '布局',
+          }
+        }, {
+          path: 'background',
+          name: 'background',
+          component: () => import( /* webpackChunkName: "about" */ './base/Backgroud.vue'),
+          meta: {
+            animate: 'slide-right',
+            title: '背景',
+          }
+        }, {
+          path: 'text',
+          name: 'text',
+          component: () => import( /* webpackChunkName: "about" */ './base/Text.vue'),
+          meta: {
+            animate: 'slide-right',
+            title: '背景',
+          }
+        }, {
+          path: 'icon',
+          name: 'icon',
+          component: () => import( /* webpackChunkName: "about" */ './base/Icon.vue'),
+          meta: {
+            animate: 'slide-right',
+            title: '图标',
+          }
+        }, {
+          path: 'icon',
+          name: 'icon',
+          component: () => import( /* webpackChunkName: "about" */ './base/Icon.vue'),
+          meta: {
+            animate: 'slide-right',
+            title: '图标',
+          }
+        }, {
+          path: 'button',
+          name: 'button',
+          component: () => import( /* webpackChunkName: "about" */ './base/Button.vue'),
+          meta: {
+            animate: 'slide-right',
+            title: '按钮',
+          }
+        }, {
+          path: 'tag',
+          name: 'tag',
+          component: () => import( /* webpackChunkName: "about" */ './base/Tag.vue'),
+          meta: {
+            animate: 'slide-right',
+            title: '标签',
+          }
+        }, {
+          path: 'avatar',
+          name: 'avatar',
+          component: () => import( /* webpackChunkName: "about" */ './base/Avatar.vue'),
+          meta: {
+            animate: 'slide-right',
+            title: '头像',
+          }
+        }, {
+          path: 'progress',
+          name: 'progress',
+          component: () => import( /* webpackChunkName: "about" */ './base/Progress.vue'),
+          meta: {
+            animate: 'slide-right',
+            title: '进度条',
+          }
+        }, {
+          path: 'shadow',
+          name: 'shadow',
+          component: () => import( /* webpackChunkName: "about" */ './base/Shadow.vue'),
+          meta: {
+            animate: 'slide-right',
+            title: '阴影',
+          }
+        }, {
+          path: 'loading',
+          name: 'loading',
+          component: () => import( /* webpackChunkName: "about" */ './base/Loading.vue'),
+          meta: {
+            animate: 'slide-right',
+            title: '加载',
+          }
+        }
+      ]
     }
   ]
 })

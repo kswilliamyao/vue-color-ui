@@ -22,70 +22,70 @@ export default {
           name: 'layout',
           color: 'cyan',
           icon: 'newsfill',
-          url: '/layout'
+          url: '/base/layout'
         },
         {
           title: '背景',
           name: 'background',
           color: 'blue',
           icon: 'colorlens',
-          url: '/background'
+          url: '/base/background'
         },
         {
           title: '文本',
           name: 'text',
           color: 'purple',
           icon: 'font',
-          url: '/text'
+          url: '/base/text'
         },
         {
           title: '图标 ',
           name: 'icon',
           color: 'mauve',
           icon: 'icon',
-          url: '/icon'
+          url: '/base/icon'
         },
         {
           title: '按钮',
           name: 'button',
           color: 'pink',
           icon: 'btn',
-          url: '/button'
+          url: '/base/button'
         },
         {
           title: '标签',
           name: 'tag',
           color: 'brown',
           icon: 'tagfill',
-          url: '/tag'
+          url: '/base/tag'
         },
         {
           title: '头像',
           name: 'avatar',
           color: 'red',
           icon: 'myfill',
-          url: '/avatar'
+          url: '/base/avatar'
         },
         {
           title: '进度条',
           name: 'progress',
           color: 'orange',
           icon: 'icloading',
-          url: '/progress'
+          url: '/base/progress'
         },
         {
           title: '边框阴影',
           name: 'shadow',
           color: 'olive',
           icon: 'copy',
-          url: '/shadow'
+          url: '/base/shadow'
         },
         {
           title: '加载',
           name: 'loading',
           color: 'green',
           icon: 'loading2',
-          url: '/loading'
+          url: '/base/loading'
         }
       ]
     }
