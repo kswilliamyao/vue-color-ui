@@ -52,7 +52,10 @@
     <div class='action'>
         <p class='icon-title text-blue'></p>进度条条纹
     </div>
-    <switch class='sm margin-right-sm'></switch>
+    <div class='action'>
+      <p class='text-df margin-right-sm'>条纹</p>
+      <label for=""><input type="checkbox" name="" id="" class="a-switch" :value="active" @click="switchClick(active)"></label>
+    </div>
     </div>
     <div class="padding bg-white">
     <div class="cu-progress round sm striped" :class="active ? 'active':''">
@@ -209,10 +212,46 @@ export default {
       },
       hideModal() {
         this.modalName = null;
-      }
+      },
+      switchClick(val) {
+        this.active = !val;
+      },
   },
 }
 </script>
 
 <style scoped>
+  .a-switch{
+    width: 80px;
+    height: 45px;
+    border-radius: 30px;
+    -webkit-appearance: none;
+    user-select: none;
+    outline: none; 
+    display: block;
+    background-color: #e0e0e0;
+    box-shadow: #c2c2c2 0 0 0 0 inset;
+    position: relative;
+    transition:0.4s;
+  }
+  .a-switch:before{
+    content: '';
+    width: 42px;
+    height: 42px;
+    border-radius: 100%;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); 
+    position: absolute;
+    left:0;
+    top:0.5px;
+    transition:0.3s;
+  }
+  .a-switch:checked{
+    border-color: #81d480;
+    background-color: #81d480; 
+  }
+  .a-switch:checked:before{
+    left: 39px;
+  }
+
 </style>
