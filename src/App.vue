@@ -5,6 +5,7 @@
       <router-view/>
     </transition>
     <Footer></Footer>
+    <Alert />
   </div>
 </template>
 <script>
