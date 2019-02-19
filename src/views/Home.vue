@@ -94,7 +94,7 @@ export default {
       gotoUrl(url) {
         this.$router.push(url);
       },
-  },
+  }
 }
 </script>
 

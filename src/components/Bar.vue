@@ -7,86 +7,7 @@
       </div>
     </div>
     <div class='box'>
-      <div class="cu-bar tabbar bg-white">
-        <div class="action">
-          <div class='icon-cu-image'>
-            <img src='../assets/images/tabbar/basics_cur.png' />
-          </div>
-          <div class='text-green'>元素</div>
-        </div>
-        <div class="action">
-          <div class='icon-cu-image'>
-            <img src='../assets/images/tabbar/component.png' />
-          </div>
-          <div class='text-gray'>组件</div>
-        </div>
-        <div class="action">
-          <div class='icon-cu-image'>
-            <img src='../assets/images/tabbar/plugin.png' />
-            <div class='cu-tag badge'>99</div>
-          </div>
-          <div class='text-gray'>扩展</div>
-        </div>
-        <div class="action">
-          <div class='icon-cu-image'>
-            <img src='../assets/images/tabbar/about.png' />
-            <div class='cu-tag badge'></div>
-          </div>
-          <div class='text-gray'>关于</div>
-        </div>
-      </div>
-      <div class="cu-bar tabbar margin-bottom-xl bg-black">
-        <div class="action text-orange">
-          <div class='icon-homefill'></div> 首页
-        </div>
-        <div class="action text-gray">
-          <div class='icon-similar'></div> 分类
-        </div>
-        <div class="action text-gray">
-          <div class='icon-recharge'></div>
-          积分
-        </div>
-        <div class="action text-gray">
-          <div class='icon-cart'>
-            <div class='cu-tag badge'>99</div>
-          </div>
-          购物车
-        </div>
-        <div class="action text-gray">
-          <div class='icon-my'>
-            <div class='cu-tag badge'></div>
-          </div>
-          我的
-        </div>
-      </div>
-      <div class="cu-bar tabbar margin-bottom-xl bg-white">
-
-      </div>
-      <div class="cu-bar tabbar bg-black" >
-        <div class="action text-green">
-          <div class='icon-homefill'></div> 首页
-        </div>
-        <div class="action text-gray">
-          <div class='icon-similar'></div> 分类
-        </div>
-        <div class="action text-gray add-action">
-          <button class='cu-btn icon-add bg-green shadow'></button>
-          发布
-        </div>
-        <div class="action text-gray">
-          <div class='icon-cart'>
-            <div class='cu-tag badge'>99</div>
-          </div>
-          购物车
-        </div>
-        <div class="action text-gray">
-          <div class='icon-my'>
-            <div class='cu-tag badge'></div>
-          </div>
-          我的
-        </div>
-      </div>
-
+      <Tabbar />
       <div class="cu-bar bg-white tabbar border shop" style="margin-top: 20px;">
         <button class="action" open-type='contact'>
           <div class='icon-service text-green'>
@@ -161,7 +82,6 @@
         </div>
       </div>
     </div>
-
     <div class="cu-bar bg-white">
       <div class='action'>
         <p class='icon-title text-green'></p>
@@ -398,8 +318,13 @@
 </template>
 
 <script>
+import Tabbar from './uiComponents/Tabbar';
+
 export default {
   name: 'Bar',
+  components: {
+    Tabbar,
+  }
 }
 </script>
 
